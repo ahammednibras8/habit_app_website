@@ -1,3 +1,30 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+html, body {
+    background-color: black;
+    color: white;
+    scrollbar-color: #1DB954 black;
+    scrollbar-width: thin;
+}
+
+/* Webkit (Chrome, Safari, newer versions of Opera) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1DB954;
+    border-radius: 20px;
+}
+
+/* For Firefox */
+* {
+    scrollbar-color: #1DB954 black;
+    scrollbar-width: thin;
+}
